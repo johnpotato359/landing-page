@@ -1,0 +1,268 @@
+/*Imports*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+/*CSS Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/**********************************/
+/* 0. Variables
+/* 1. Base
+/* 2. Header
+/* 3. Menu
+/* 4. Main
+/* 5. Benefits
+/* 6. Video
+/* 7. Products
+/* 7. Footer
+/**********************************/
+
+
+/**********************************/
+/* 0. Variables
+/**********************************/
+:root {
+    --font-body: 'Lato', sans-serif;
+    
+    --color-body: #EEEEEE;
+    --color-button: #F1C40F;
+}
+
+/**********************************/
+/* 1. Base
+/**********************************/
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--color-body);
+    font-family: var(--font-body);
+}
+
+a,
+a:hover,
+a:active,
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #000000;
+}
+
+li {
+    list-style: none;
+}
+
+nav {
+    display: block;
+}
+
+
+.menu__logo,
+.footer__logo {
+    margin: 10px;
+}
+
+.menu__logo img {
+    width: 300px;
+}
+
+main{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/**********************************/
+/* 2. Header
+/**********************************/
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-bg {
+    background-color: var(--color-body);
+}
+
+/**********************************/
+/* 3. Menu
+/**********************************/
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 960px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    padding: 4px;
+}
+
+
+.nav__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-link {
+    font-weight: bold;
+    padding: 20px 10px;
+    margin: 0 15px;
+}
+
+/**********************************/
+/* 4. Main
+/**********************************/
+.form {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.form__input-email {
+    padding: 4px;
+    width: 30%;
+    margin-top: 20px;
+}
+
+.form__button-submit {
+    background-color: var(--color-button);
+    border: none;
+    border-radius: 2px;
+    font-weight: bold;
+    font-family: var(--font-body);
+    font-size: 1.2rem;
+    padding: 7px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.form__button-submit:hover {
+    background-color: #e2b915;
+}
+
+/**********************************/
+/* 5. Benefits
+/**********************************/
+
+.benefits__container {
+    display: flex;
+}
+
+.benefits__container-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    width: 20vw;
+    color: darkorange;
+    font-size: 3rem;
+}
+
+.benefits__container-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 125px;
+    width: 80vw;
+    padding: 5px;
+    font-weight: 400;
+    
+}
+
+/**********************************/
+/* 6. Video
+/**********************************/
+div.video {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+}
+
+div.video > iframe {
+    max-width: 560px;
+    width: 100%;
+}
+
+/**********************************/
+/* 7. Products
+/**********************************/
+.product {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.product__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+
+.product__name {
+    width: 100%;
+    text-transform: uppercase;
+    padding: 15px;
+    font-weight: 700;
+    font-size: 1rem;
+    background-color: #DDDDDD;
+    margin-bottom: 10px;
+}
+
+.product__price {
+    margin-bottom: 10px;
+}
+
+.product-list__item {
+    padding: 4px;
+}
+
+.product__btn {
+    font-weight: 300;
+    font-size: 1.2rem;
+    border: 0;
+    border-radius: 2px;
+    margin: 25px 0;
+    background-color: var(--color-button);
+    text-transform: uppercase;
+    padding: 0 20px;
+    height: 40px;
+    cursor: pointer;
+}
+
+/**********************************/
+/* 8. Footer
+/**********************************/
+.footer__container {
+    background-color: #DDD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.copyright__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+.nav__link-footer {
+    padding: 5px 10px;
+    margin: 0 15px;
+}

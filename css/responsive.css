@@ -1,0 +1,23 @@
+@media (max-width: 370px) {
+    .nav__link {
+        font-size: 0.7rem;
+    }
+
+    .nav__link-footer,
+    .copyright {
+        padding: 2px;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .product {
+        flex-direction: column;
+    }
+    .product__item {
+        max-width: 300px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+}
